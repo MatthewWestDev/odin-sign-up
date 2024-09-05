@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">Sign-Up for Odin</a>
+        </h1>
+    </header>
+    <main>
+        <h2>Sign-Up for Odin</h2>
+        <h3>This is not a real online service. This is only a demo.</h3>
+        <h3>Please complete the form below to sign up.</h3>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Let's Get You Signed Up!</legend>
+                <label for="first_name">First Name: (required) 
+                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" required />
+                </label>
+                <label for="last_name">Last Name: (required) 
+                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" required />
+                </label>
+                <label for="email">Email: (required) 
+                    <input type="email" name="email" id="email" autocomplete="email" required />
+                </label>
+                <label for="phone">Phone Number: (required) 
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" required />
+                </label>
+                <label for="password">Password: (required) 
+                    <input type="password" name="password" id="password" autocomplete="new-password" required />
+                </label>
+                <label for="password-confirm">Confirm Password: (required) 
+                    <input type="password" name="password-confirm" id="password-confirm" autocomplete="new-password" required />
+                </label>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </main>
+</body>
+</html>
