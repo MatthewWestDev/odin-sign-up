@@ -58,11 +58,14 @@
     display: flex;
     flex: 1;
     min-height: 100vh;
+    min-width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   header {
     display: flex;
     flex: 1;
+    flex-shrink: 1;
     flex-direction: row;
     align-items: center;
     background-image: url(images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg);
@@ -92,7 +95,107 @@
   }
 
   main {
+    display: flex;
     flex: 2;
-    height: 100vh;
+    flex-shrink: 0;
+    min-width: 800px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 
+  }
+
+  main h2, main h3, main form, main p {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  main form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: ivory;
+    position: relative;
+  }
+
+  form::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+  
+  form fieldset {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  form legend {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  form p {
+    padding-left: 0px;
+    padding-right: 40px;
+    float: left;
+    width: 50%;
+  }
+
+  form label, form input {
+    width: 100%;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  form input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    border: 1px solid #666;
+  }
+
+  form input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+
+  }
+
+  form input:valid {
+    border: 1px solid darkgreen;
+  }
+
+  form input:focus:invalid {
+    border: 1px dashed red;
+  }
+
+  form input:invalid {
+    background-color: lightpink;
+  }
+  
+  form button {
+    padding: 5px 25px;
+    margin-bottom: 20px;
+    background-color: darkgreen;
+    border-radius: 8px;
+    color: white;
+  }
+
+  p a {
+    color: darkgreen;
+  }
+
+  p.help-text {
+    margin-top: 20px;
   }
